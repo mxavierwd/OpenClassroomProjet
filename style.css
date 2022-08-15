@@ -1,3 +1,18 @@
-h1{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    color: black;
+    font-family: Shrikhand,cursive;
+    text-align: center;
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 3px 1px lightgray;
+    padding: 0.2rem;
 }
