@@ -97,13 +97,15 @@ padding-bottom: 3rem;
 }
 .fonctionnement li{
     background-color: #f6f6f6;
-    /* padding: 1rem 2rem; */
-    /* border: 1px solid black; */
     box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
     border-radius: 1rem;
     margin-right: 1rem;
     padding: 1.5rem;
     position: relative;
+}
+
+.fonctionnement li:hover{
+    background-color: #f5e5f0;
 }
 
 .fonctionnement ol{
@@ -191,10 +193,17 @@ padding-bottom: 3rem;
     bottom: 3rem;
 }
 
-/* .card_menu i:hover{
-    font-size: 3rem;
-    background-color: #FF79DA;
-} */
+.menus .fa-solid{
+    color: transparent;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+.fa-solid:hover{
+    opacity: 1;
+}
 
 
 @media (min-width:912px){
