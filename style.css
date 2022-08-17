@@ -139,7 +139,7 @@ padding-bottom: 3rem;
     padding-left: 1.2rem;
     padding-top: 2rem;
     margin-top: 4rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .card_menu{
@@ -184,6 +184,7 @@ padding-bottom: 3rem;
 
 .menus{
     display: grid;
+    gap: 2rem;
 }
 
 .card_menu i{
