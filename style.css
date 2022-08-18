@@ -246,3 +246,11 @@ padding-bottom: 3rem;
 .footer li{
     margin-bottom: 0.5rem;
 }
+
+.liens_footer .fa-utensils{
+    margin-right: 0.6rem;
+}
+
+.liens_footer .fa-handshake-angle{
+    margin-right: 0.2rem;
+}

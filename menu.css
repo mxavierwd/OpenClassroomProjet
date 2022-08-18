@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+/* header */
+
+header{
+    color: black;
+    font-family: Shrikhand,cursive;
+    text-align: center;
+    box-shadow: 0 3px 3px 1px lightgray;
+    padding: 0.2rem;
+    margin: 0;
+    position: relative;
+    padding: 0.5rem;
+}
+.header__arrow{
+    position: absolute;
+    left: 2rem;
+    width: 2rem;
+    top: 50%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* image */
+
+.img_restau{
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* main */
+
+.bloc_menu{
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.nom_restau{
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-family: Shrikhand,cursive;
+}
+
+
+.nom_restau i{
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.2rem;
+}
+
+.nom_restau .fa-solid{
+    color: transparent;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+.nom_restau .fa-solid:hover{
+    opacity: 1;
+}
+
+.sous_menu h2{
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.sous_menu div{
+    border: 1px solid black;
+
+}
+
+    /* entrée-plat-dessert*/
+
+.entrée,
+.plat,
+.dessert{
+    display: flex;
+}
+.nom_entrée,
+.nom_plat,
+.nom_dessert{
+    padding-left: 1rem;
+    flex: 1;
+}
+
+
+
+     /* footer */
+
+     .footer{
+        border: 1px solid black;
+        background-color: #353535;
+        color: white;
+        padding-top: 1.5rem;
+    }
+    
+    .footer ul{
+        list-style-type: none;
+        padding-left: 1.5rem;
+        
+    }
+    
+    .logo_footer{
+        padding-left: 1.5rem;
+        font-family: Shrikhand,cursive;
+        font-size: 1.5rem;
+    }
+    
+    .liens_footer{
+        color: #fff;
+        text-decoration: none; 
+    }
+    
+    .footer li{
+        margin-bottom: 0.5rem;
+    }
+
+    .liens_footer .fa-utensils{
+        margin-right: 0.6rem;
+    }
+    
+    .liens_footer .fa-handshake-angle{
+        margin-right: 0.2rem;
+    }
+    
