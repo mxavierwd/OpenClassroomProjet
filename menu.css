@@ -172,6 +172,12 @@ header{
     opacity: 1;
 }
 
+.confirmation_icone{
+    color: #f6f6f6;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
      /* footer */
 
      .footer{
