@@ -163,6 +163,7 @@ header{
    margin-right: -4rem;
    opacity: 0;
    border-radius: 0 1rem 1rem 0;
+   /* overflow: hidden; */
 }
 
 .entrée:hover .confirmation,
@@ -170,12 +171,21 @@ header{
 .dessert:hover .confirmation{
     margin-right: 0;
     opacity: 1;
+    transition-duration: .5s;
 }
 
 .confirmation_icone{
     color: #f6f6f6;
     font-size: 2rem;
     margin: 1rem;
+    rotate: 180deg;
+}
+
+.entrée:hover .confirmation_icone i,
+.plat:hover .confirmation_icone i,
+.dessert:hover .confirmation_icone i{
+    transition: .5s;
+    rotate: -180deg;
 }
 
      /* footer */
@@ -215,18 +225,6 @@ header{
     .liens_footer .fa-handshake-angle{
         margin-right: 0.2rem;
     }
-
-
-     /* .confirmation_icone{
-        height: 1.6rem;
-        width: 1.6rem;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100px;
-        transition-duration: .5s;
-    }   */
     
     @media (min-width:935px){
         .menu_restau{
