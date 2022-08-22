@@ -107,13 +107,24 @@ header{
 }
 
     /* entrée-plat-dessert*/
-
 .entrée,
+.entrée_1,
+.entrée_2,
+.entrée_3,
+.entrée_4,
 .plat,
-.dessert{
+.plat_1,
+.plat_2,
+.plat_3,
+.dessert,
+.dessert_1,
+.dessert_2,
+.dessert_3{
     display: flex;
     cursor: pointer;
     /* padding: 1rem; */
+    transform: scale(0);
+    animation: appear .5s forwards;
 }
 .nom_entrée,
 .nom_plat,
@@ -167,8 +178,18 @@ header{
 }
 
 .entrée:hover .confirmation,
+.entrée_1:hover .confirmation,
+.entrée_2:hover .confirmation,
+.entrée_3:hover .confirmation,
+.entrée_4:hover .confirmation,
 .plat:hover .confirmation,
-.dessert:hover .confirmation{
+.plat_1:hover .confirmation,
+.plat_2:hover .confirmation,
+.plat_3:hover .confirmation,
+.dessert:hover .confirmation,
+.dessert_1:hover .confirmation,
+.dessert_2:hover .confirmation,
+.dessert_3:hover .confirmation{
     margin-right: 0;
     opacity: 1;
     transition-duration: .5s;
@@ -182,11 +203,59 @@ header{
 }
 
 .entrée:hover .confirmation_icone i,
+.entrée_1:hover .confirmation_icone i,
+.entrée_2:hover .confirmation_icone i,
+.entrée_3:hover .confirmation_icone i,
+.entrée_4:hover .confirmation_icone i,
 .plat:hover .confirmation_icone i,
-.dessert:hover .confirmation_icone i{
+.plat_1:hover .confirmation_icone i,
+.plat_2:hover .confirmation_icone i,
+.plat_3:hover .confirmation_icone i,
+.dessert:hover .confirmation_icone i,
+.dessert_1:hover .confirmation_icone i,
+.dessert_2:hover .confirmation_icone i,
+.dessert_3:hover .confirmation_icone i{
     transition: .5s;
     rotate: -180deg;
 }
+
+/* scale animation */
+
+.entrée_2{
+    animation-delay: 0.1s;
+}
+.entrée_3{
+    animation-delay: 0.2s;
+}
+.entrée_4{
+    animation-delay: 0.25s;
+}
+.plat_1{
+    animation-delay: 0.3s;
+}
+.plat_2{
+    animation-delay: 0.4s;
+}
+.plat_3{
+    animation-delay: 0.5s;
+}
+.dessert_1{
+    animation-delay: 0.6s;
+}
+.dessert_2{
+    animation-delay: 0.7s;
+}
+.dessert_3{
+    animation-delay: 0.8s;
+}
+
+
+@keyframes appear{
+    /* 0%{transform: scale(O);} */
+    100%{transform: scale(1);}
+
+}
+
 
      /* footer */
 
