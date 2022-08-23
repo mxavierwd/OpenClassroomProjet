@@ -125,6 +125,7 @@ header{
     /* padding: 1rem; */
     transform: scale(0);
     animation: appear .5s forwards;
+    overflow: hidden;
 }
 .nom_entrée,
 .nom_plat,
