@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+/* header */
+header{
+    color: black;
+    font-family: Shrikhand,cursive;
+    text-align: center;
+    box-shadow: 0 3px 3px 1px lightgray;
+    padding: 0.2rem;
+    margin: 0;
+    position: relative;
+}
+
+main{
+    .ville{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #f3f3f3;
+        text-align: center;
+        padding: 0.5rem;  
+    }
+    .ville i{
+        font-size: 1.5rem;
+    }
+}
+
+/* explorer */
+
+.explorer{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 1rem;
+padding-bottom: 3rem;
+    h2{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    p{
+        font-weight: lighter;   
+    }
+    button{
+        border: 0;
+        padding: .75rem 1.5rem;
+        border-radius: 100px;
+        color: white;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        cursor: pointer;
+        font-size: inherit;
+        box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);  
+        margin-top: 1rem; 
+    }
+    button:hover{
+        opacity: 0.9;
+    }
+}
+
+/* fonctionnement */
+
+.fonctionnement{
+    counter-reset: steps;
+
+    li::before{
+        content: counter(steps);
+        counter-increment: steps;
+        color: white;
+        background-color:#9356DC;
+        display: grid;
+        place-items: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -1rem;
+        bottom: 1rem;
+    }
+    h2{
+        margin-left: 1.2rem;
+    }
+    li{
+        background-color: #f6f6f6;
+        box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+        border-radius: 1rem;
+        margin-right: 1rem;
+        padding: 1.5rem;
+        position: relative;
+    }
+    li:hover{
+        background-color: #f5e5f0;
+    }
+    ol{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style-type: none;
+    }
+    i{
+        padding-right: 1rem;
+        color: #9356DC ;
+    }
+
+}
+
+
+/* restaurants */
+
+.restaurants{
+    background-color: #f6f6f6;
+    padding-left: 1.2rem;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+    h3{
+        padding-left: 1rem;
+        margin-bottom: 0;
+    }
+    p{
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.card_menu{
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+    margin-right: 1rem;
+    flex-grow: 1;   
+    text-decoration: none; 
+    color: black;
+    position: relative;
+    
+    img{
+        height: 12rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+    i{
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 3rem;
+    }
+}
+
+
+
+.badge{
+    background-color: #99E2D0;
+    padding: 0.5rem;
+    color: rgb(51, 130, 84);
+    position: absolute;
+    top: 1rem;
+    right: .75rem;
+    border-radius: 0.2rem;
+}
+
+.menus{
+    display: grid;
+    gap: 2rem;
+    .fa-solid{
+        color: transparent;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+    }
+    .fa-solid:hover{
+        opacity: 1;
+    }
+}
+
+/* footer */
+
+.footer{
+    border: 1px solid black;
+    background-color: #353535;
+    color: white;
+    padding-top: 1.5rem;
+    ul{
+        list-style-type: none;
+        padding-left: 1.5rem;    
+    }
+    li{
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.logo_footer{
+    padding-left: 1.5rem;
+    font-family: Shrikhand,cursive;
+    font-size: 1.5rem;
+}
+
+.liens_footer{
+    color: #fff;
+    text-decoration: none;
+    .fa-utensils{
+        margin-right: 0.6rem;
+    }
+    .fa-handshake-angle{
+        margin-right: 0.2rem;
+    }
+    
+}
+
+@media (min-width:912px){
+    .fonctionnement ol{
+        display: flex;
+        flex-direction: row;
+    }
+    .fonctionnement li{
+        width: 33%;
+    }
+    .menus{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
