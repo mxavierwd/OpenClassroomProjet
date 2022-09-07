@@ -79,6 +79,31 @@ main .ville i {
   font-size: 1.5rem;
 }
 
+.ville input {
+  border: none;
+  background-color: #f3f3f3;
+  font-size: large;
+  color: black;
+}
+
+.ville input::-moz-placeholder {
+  opacity: 1;
+  color: black;
+  font-weight: 600;
+}
+
+.ville input:-ms-input-placeholder {
+  opacity: 1;
+  color: black;
+  font-weight: 600;
+}
+
+.ville input::placeholder {
+  opacity: 1;
+  color: black;
+  font-weight: 600;
+}
+
 /* explorer */
 .explorer {
   text-align: center;

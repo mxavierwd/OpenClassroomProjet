@@ -72,6 +72,20 @@ main{
     }
 }
 
+.ville input{
+    border: none;
+    background-color: #f3f3f3;
+    font-size: large;
+    color: black;
+}
+
+.ville input::placeholder{
+    // font-size: large;
+    opacity: 1;
+    color: black;
+    font-weight: 600;
+}
+
 /* explorer */
 
 .explorer{
