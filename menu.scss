@@ -97,11 +97,23 @@ header{
 
 }
 
-.trait{
+// .trait{
+//     border: 2px solid #99E2D0;
+//     margin-left: 1rem;
+//     width: 4rem;
+// }
+
+.sous_menu h2::after{
+    content: "";
     border: 2px solid #99E2D0;
-    margin-left: 1rem;
     width: 4rem;
+    background-color: #99E2D0;
+    display: block;
 }
+
+// .sous_menu{
+//     position: relative;
+// }
 
     /* entrée-plat-dessert*/
 .entrée,
