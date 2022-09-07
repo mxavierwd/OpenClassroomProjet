@@ -195,7 +195,7 @@ header{
     color: #f6f6f6;
     font-size: 2rem;
     margin: 1rem;
-    // rotate: 180deg;
+
 }
 
 .entrée:hover .confirmation_icone i,
@@ -247,7 +247,7 @@ header{
 
 
 @keyframes appear{
-    /* 0%{transform: scale(O);} */
+    
     100%{transform: scale(1);}
 
 }

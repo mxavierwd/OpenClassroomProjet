@@ -253,14 +253,12 @@ header {
 }
 
 @-webkit-keyframes appear {
-  /* 0%{transform: scale(O);} */
   100% {
     transform: scale(1);
   }
 }
 
 @keyframes appear {
-  /* 0%{transform: scale(O);} */
   100% {
     transform: scale(1);
   }

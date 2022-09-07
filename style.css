@@ -8,6 +8,53 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #575252;
+  transition: opacity 3s, visibility 3s;
+  z-index: 1;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #99E2D0;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  -webkit-animation: loading 0.75s ease infinite;
+          animation: loading 0.75s ease infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 /* header */
 header {
   color: black;
@@ -173,7 +220,6 @@ main .ville i {
 
 /* footer */
 .footer {
-  border: 1px solid black;
   background-color: #353535;
   color: white;
   padding-top: 1.5rem;
