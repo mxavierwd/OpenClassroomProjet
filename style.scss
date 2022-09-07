@@ -149,6 +149,10 @@ padding-bottom: 3rem;
     }
     li:hover{
         background-color: #f5e5f0;
+        i{
+            padding-right: 1rem;
+            color: #9356DC ;
+        }
     }
     ol{
         display: flex;
@@ -158,7 +162,7 @@ padding-bottom: 3rem;
     }
     i{
         padding-right: 1rem;
-        color: #9356DC ;
+        color: grey ;
     }
 
 }

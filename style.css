@@ -166,6 +166,10 @@ main .ville i {
 .fonctionnement li:hover {
   background-color: #f5e5f0;
 }
+.fonctionnement li:hover i {
+  padding-right: 1rem;
+  color: #9356DC;
+}
 .fonctionnement ol {
   display: flex;
   flex-direction: column;
@@ -174,7 +178,7 @@ main .ville i {
 }
 .fonctionnement i {
   padding-right: 1rem;
-  color: #9356DC;
+  color: grey;
 }
 
 /* restaurants */
