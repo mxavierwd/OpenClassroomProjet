@@ -99,16 +99,13 @@ header {
 }
 
 /* entrée-plat-dessert*/
-.entrée,
 .entrée_1,
 .entrée_2,
 .entrée_3,
 .entrée_4,
-.plat,
 .plat_1,
 .plat_2,
 .plat_3,
-.dessert,
 .dessert_1,
 .dessert_2,
 .dessert_3 {
@@ -125,6 +122,21 @@ header {
 .nom_dessert {
   flex: 1;
   margin: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 33%;
+}
+
+.nom_entrée h4,
+.nom_entrée p,
+.nom_plat h4,
+.nom_plat p,
+.nom_dessert h4,
+.nom_dessert p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .prix_entrée,
@@ -299,9 +311,11 @@ header {
 
 @media (min-width: 935px) {
   .menu_restau {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+  .sous_menu {
+    width: 33%;
   }
 }/*# sourceMappingURL=menu.css.map */

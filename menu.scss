@@ -94,13 +94,16 @@ header{
     border-radius: 1rem;
     box-shadow: .25rem .25rem 10px rgba(79, 79, 79, 0.25);
     background-color: #fff;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
 
 }
 
-// .trait{
-//     border: 2px solid #99E2D0;
-//     margin-left: 1rem;
-//     width: 4rem;
+// .sous_menu{
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
 // }
 
 .sous_menu h2::after{
@@ -111,21 +114,18 @@ header{
     display: block;
 }
 
-// .sous_menu{
-//     position: relative;
-// }
 
     /* entrée-plat-dessert*/
-.entrée,
+// .entrée,
 .entrée_1,
 .entrée_2,
 .entrée_3,
 .entrée_4,
-.plat,
+// .plat,
 .plat_1,
 .plat_2,
 .plat_3,
-.dessert,
+// .dessert,
 .dessert_1,
 .dessert_2,
 .dessert_3{
@@ -140,7 +140,23 @@ header{
 .nom_dessert{
     flex: 1;
     margin: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 33%;
 }
+
+.nom_entrée h4,
+.nom_entrée p,
+.nom_plat h4,
+.nom_plat p,
+.nom_dessert h4,
+.nom_dessert p{
+    overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap
+}
+
 
 .prix_entrée,
 .prix_plat,
@@ -148,6 +164,7 @@ header{
     margin-top: 2.2rem;
     margin-right: 1rem;
 }
+
 
 /* commander */
 
@@ -179,7 +196,7 @@ header{
 
 .confirmation{
    background-color: #99e2d0;
-   width: 04rem;
+   width: 4rem;
    margin-right: -4rem;
    opacity: 0;
    border-radius: 0 1rem 1rem 0;
@@ -302,8 +319,26 @@ header{
     
     @media (min-width:935px){
         .menu_restau{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
+            display: flex;
+            // grid-template-columns: repeat(3,1fr);
             column-gap: 1rem;
           }
+
+        .sous_menu{
+            width: 33%;
+        }
+
+        // .entrée_1,
+        // .entrée_2,
+        // .entrée_3,
+        // .entrée_4,
+        // .plat_1,
+        // .plat_2,
+        // .plat_3,
+        // .dessert_1,
+        // .dessert_2,
+        // .dessert_3{
+        //     width: 100%;
+        // }
+
         }
