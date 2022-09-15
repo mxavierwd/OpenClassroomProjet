@@ -94,17 +94,7 @@ header{
     border-radius: 1rem;
     box-shadow: .25rem .25rem 10px rgba(79, 79, 79, 0.25);
     background-color: #fff;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // white-space: nowrap;
-
 }
-
-// .sous_menu{
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     white-space: nowrap;
-// }
 
 .sous_menu h2::after{
     content: "";
@@ -116,16 +106,13 @@ header{
 
 
     /* entrée-plat-dessert*/
-// .entrée,
 .entrée_1,
 .entrée_2,
 .entrée_3,
 .entrée_4,
-// .plat,
 .plat_1,
 .plat_2,
 .plat_3,
-// .dessert,
 .dessert_1,
 .dessert_2,
 .dessert_3{
@@ -224,7 +211,6 @@ white-space: nowrap
     color: #f6f6f6;
     font-size: 2rem;
     margin: 1rem;
-
 }
 
 .entrée:hover .confirmation_icone i,
@@ -241,7 +227,7 @@ white-space: nowrap
 .dessert_2:hover .confirmation_icone i,
 .dessert_3:hover .confirmation_icone i{
     transition: .5s;
-    rotate: 360deg;
+    rotate: -360deg;
 }
 
 /* scale animation */
@@ -320,25 +306,10 @@ white-space: nowrap
     @media (min-width:935px){
         .menu_restau{
             display: flex;
-            // grid-template-columns: repeat(3,1fr);
             column-gap: 1rem;
           }
 
         .sous_menu{
             width: 33%;
         }
-
-        // .entrée_1,
-        // .entrée_2,
-        // .entrée_3,
-        // .entrée_4,
-        // .plat_1,
-        // .plat_2,
-        // .plat_3,
-        // .dessert_1,
-        // .dessert_2,
-        // .dessert_3{
-        //     width: 100%;
-        // }
-
         }
