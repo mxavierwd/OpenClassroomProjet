@@ -241,7 +241,7 @@ white-space: nowrap
 .dessert_2:hover .confirmation_icone i,
 .dessert_3:hover .confirmation_icone i{
     transition: .5s;
-    rotate: -360deg;
+    rotate: 360deg;
 }
 
 /* scale animation */
