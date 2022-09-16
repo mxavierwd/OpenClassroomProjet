@@ -102,14 +102,15 @@ header{
     width: 4rem;
     background-color: #99E2D0;
     display: block;
+    margin-bottom: 1rem;
 }
 
 
     /* entrée-plat-dessert*/
-.entrée_1,
-.entrée_2,
-.entrée_3,
-.entrée_4,
+.entree_1,
+.entree_2,
+.entree_3,
+.entree_4,
 .plat_1,
 .plat_2,
 .plat_3,
@@ -122,30 +123,31 @@ header{
     animation: appear .5s forwards;
     overflow: hidden;
 }
-.nom_entrée,
+.nom_entree,
 .nom_plat,
 .nom_dessert{
     flex: 1;
-    margin: 1rem;
+    margin: 1rem 0 1rem 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 33%;
 }
 
-.nom_entrée h4,
-.nom_entrée p,
+.nom_entree h4,
+.nom_entree p,
 .nom_plat h4,
 .nom_plat p,
 .nom_dessert h4,
 .nom_dessert p{
     overflow: hidden;
 text-overflow: ellipsis;
-white-space: nowrap
+white-space: nowrap;
+font-size: 15px;
 }
 
 
-.prix_entrée,
+.prix_entree,
 .prix_plat,
 .prix_dessert{
     margin-top: 2.2rem;
@@ -189,11 +191,11 @@ white-space: nowrap
    border-radius: 0 1rem 1rem 0;
 }
 
-.entrée:hover .confirmation,
-.entrée_1:hover .confirmation,
-.entrée_2:hover .confirmation,
-.entrée_3:hover .confirmation,
-.entrée_4:hover .confirmation,
+.entree:hover .confirmation,
+.entree_1:hover .confirmation,
+.entree_2:hover .confirmation,
+.entree_3:hover .confirmation,
+.entree_4:hover .confirmation,
 .plat:hover .confirmation,
 .plat_1:hover .confirmation,
 .plat_2:hover .confirmation,
@@ -213,11 +215,11 @@ white-space: nowrap
     margin: 1rem;
 }
 
-.entrée:hover .confirmation_icone i,
-.entrée_1:hover .confirmation_icone i,
-.entrée_2:hover .confirmation_icone i,
-.entrée_3:hover .confirmation_icone i,
-.entrée_4:hover .confirmation_icone i,
+.entree:hover .confirmation_icone i,
+.entree_1:hover .confirmation_icone i,
+.entree_2:hover .confirmation_icone i,
+.entree_3:hover .confirmation_icone i,
+.entree_4:hover .confirmation_icone i,
 .plat:hover .confirmation_icone i,
 .plat_1:hover .confirmation_icone i,
 .plat_2:hover .confirmation_icone i,
@@ -232,13 +234,13 @@ white-space: nowrap
 
 /* scale animation */
 
-.entrée_2{
+.entree_2{
     animation-delay: 0.1s;
 }
-.entrée_3{
+.entree_3{
     animation-delay: 0.2s;
 }
-.entrée_4{
+.entree_4{
     animation-delay: 0.25s;
 }
 .plat_1{
